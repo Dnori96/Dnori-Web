@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+    /* Colors */
+    --color-grey-100: #F8F9FA;
+    --color-grey-200: #E9ECEF;
+    --color-grey-300: #DEE2E6;
+    --color-grey-400: #CED4DA;
+    --color-grey-500: #ADB5BD;
+    --color-grey-600: #6C757D;
+    --color-grey-700: #495057;
+    --color-grey-800: #343A40;
+    --color-grey-900: #212529;
+
+    /* Font */
+    --font-sans: "Lato", system-ui, sans-serif;
+
+    /* Other param */
+}
