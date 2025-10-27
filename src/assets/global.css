@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@plugin "@midudev/tailwind-animations";
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
@@ -19,4 +20,22 @@
     --font-sans: "Lato", system-ui, sans-serif;
 
     /* Other param */
+}
+
+
+
+.color-transition{
+    @apply transition-colors duration-100 ease-in
+}
+
+.text-setting {
+    @apply dark:hover:text-grey-100 hover:text-grey-700 hover:animate-scale
+}
+
+.divider{
+    @apply h-0.5 bg-grey-700 dark:bg-grey-400 rounded-2xl
+}
+
+.icons{
+    @apply flex justify-center items-center hover:animate-scale rounded-xl
 }
