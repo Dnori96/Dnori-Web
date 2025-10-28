@@ -28,7 +28,7 @@ function App() {
   
 
   return (
-    <div className="grid grid-rows-[auto_auto_1fr_auto_auto] pl-10 pr-10 pt-4 pb-4 h-dvh bg-grey-100 dark:bg-grey-900 color-transition" data-theme={theme}>
+    <div className="grid grid-rows-[auto_auto_1fr_auto_auto] pl-10 pr-10 pt-4 pb-4 h-dvh bg-grey-100 dark:bg-grey-900 color-transition overflow-y-scroll" data-theme={theme}>
       <Header 
       lang={lang} 
       onThemeChange={changeTheme} 
