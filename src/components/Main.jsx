@@ -1,12 +1,14 @@
+import ProjectCard from "./ProjectCard"
 
 function Main({ lang, icon }) {
-  const title = lang == "EN" ? "Frontend Developer" : "Developer Frontend"
+  const title = lang == "EN" ? "Frontend Developer" : "Desarrollador Frontend"
   const about = lang == "EN" ? 
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, tempore corporis"
+  const projects = lang == "EN" ? "Projects" : "Proyectos"
 
     return(
-      <main className="flex flex-col justify-evenly items-center gap-4">
-        <section className="flex flex-col items-center gap-2">
+      <main className="flex flex-col justify-evenly items-center gap-40">
+        <section className="flex flex-col items-center mt-50 gap-2">
           <h1 className="dark:text-grey-300 text-grey-800 text-6xl font-bold animate-slide-up-fade">{title}</h1>
           <h2 className="dark:text-grey-300 text-grey-800 text-5xl font-medium animate-slide-up-fade">Diego Noriega</h2>
           <div className="flex gap-5 mt-4">
@@ -40,8 +42,14 @@ function Main({ lang, icon }) {
           </div>
           <p className="dark:text-grey-500 text-grey-800 w-3xl h-auto text-balance text-center animate-slide-up-fade">{about}</p>
         </section>
-        <section>
-          {/* Projects Cards */}
+        <section className="flex flex-col gap-4">
+          <h3 className="dark:text-grey-300 text-grey-800 text-4xl text-center">{projects}</h3>
+          <div className="grid grid-cols-2 gap-6 ">
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+          </div>
         </section>
         <section>
           {/* Techs */}
