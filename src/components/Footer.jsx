@@ -8,7 +8,7 @@ function Footer({ onThemeChange, icon }) {
       <footer className="flex items-center justify-between pl-10 pr-10 pt-3 dark:text-grey-400 text-grey-800">
         <p className="animate-fade-in">© {new Date().getFullYear()} Diego Noriega</p>
         <div className="flex gap-4 items-center">
-          <button onClick={updateTheme} className="text-setting">
+          <button onClick={updateTheme} className="text-setting cursor-pointer">
             <img src={icon.themeIcon} alt="Theme button" aria-label="Button to change the theme color"/>
           </button>
           <button className="text-setting">
