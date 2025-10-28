@@ -23,26 +23,42 @@ function Header({ lang, onThemeChange, onLangChange, icon }) {
             <a href="#" className="text-setting">{contact}</a>
           </div>
           <div className="flex gap-4 items-center">
-            <Menu as="div" className="flex flex-col w-10 relative gap-2">
-              <MenuButton className="flex items-center gap-1 pl-1 outline-0">
-                {lang}
-                <img src={icon.arrow} alt="arrow dropdown" className="size-3"/>
-              </MenuButton>
-              <MenuItems className="flex flex-col absolute z-10 mt-6 w-full p-1 origin-top-right bg-grey-800 outline-0 rounded-md">
-                  <MenuItem onClick={updateLang} className="hover:bg-grey-700/50 rounded-sm pl-1 cursor-pointer">
-                    <a>EN</a>
-                  </MenuItem>
-                  <MenuItem onClick={updateLang} className="hover:bg-grey-700/50 rounded-sm pl-1 cursor-pointer">
-                    <a>ES</a>
-                  </MenuItem>
-              </MenuItems>
+            <Menu as="div" className="flex flex-col w-11 relative gap-2">
+              {({ open }) => (
+                <>
+                  <MenuButton className="flex items-center group gap-1 pl-1 pr-1 rounded-md outline-0 cursor-pointer dark:hover:bg-grey-400/10 hover:bg-grey-800/10">
+                    {lang}
+                    <img
+                      src={icon.arrow}
+                      alt="arrow dropdown"
+                      className={`size-3 transition-transform duration-250 ${open ? "rotate-180" : ""}`}
+                    />
+                  </MenuButton>
+                  <MenuItems className="flex flex-col absolute z-10 mt-6 w-full p-1 origin-top-right dark:bg-grey-800 bg-grey-400 outline-0 rounded-md">
+                    <MenuItem>
+                      <a onClick={updateLang} className="hover:bg-grey-700/50 rounded-sm pl-1 cursor-pointer">EN</a>
+                    </MenuItem>
+                    <MenuItem>
+                      <a onClick={updateLang} className="hover:bg-grey-700/50 rounded-sm pl-1 cursor-pointer">ES</a>
+                    </MenuItem>
+                  </MenuItems>
+                </>
+              )}
             </Menu>
-            <button onClick={updateTheme} className="text-setting">
-              <img src={icon.themeIcon} alt="Theme button" aria-label="Button to change the theme color"/>
+            <button onClick={updateTheme} className="text-setting cursor-pointer">
+              <img 
+              src={icon.themeIcon} 
+              alt="Theme button" 
+              aria-label="Button to change the theme color"
+              />
             </button>
             <button className="text-setting">
               <a href="https://github.com/Dnori96" target="blank">
-                <img src={icon.github} alt="Link to github" aria-label="Link to github in the form of an icon"/>
+                <img 
+                src={icon.github} 
+                alt="Link to github" 
+                aria-label="Link to github in the form of an icon"
+                />
               </a>
             </button>
           </div>
