@@ -2,7 +2,7 @@
 
 👋 This is my humble website 💻
 
-[**Website** 😎]()
+[**Website** 😎](https://www.dnori.dev/)
 
 ---
 
