@@ -39,3 +39,47 @@
 .icons{
     @apply flex justify-center items-center hover:animate-scale rounded-xl
 }
+
+.card-links{
+    @apply font-bold underline  dark:hover:text-grey-400 hover:text-grey-700
+}
+
+.resize-card{
+    @apply xl:grid-cols-2
+}
+.resize-card-box{
+    @apply xl:h-52 xl:w-md md:h-52 md:w-md h-52
+}
+.resize-card-desc{
+    @apply xl:text-base md:text-base text-sm
+}
+.resize-title{
+    @apply xl:text-6xl md:text-5xl text-[min(max(20px,calc(1.5rem+((1vw-3.6px)*6))),48px)]
+}
+.resize-name{
+    @apply xl:text-5xl md:text-4xl text-[min(max(20px,calc(1.5rem+((1vw-3.6px)*6))),36px)]
+}
+.resize-title-projects{
+    @apply xl:text-4xl md:text-3xl text-[min(max(20px,calc(1.5rem+((1vw-3.6px)*6))),30px)]
+}
+.resize-nav-text{
+    @apply xl:text-base md:text-sm text-sm xl:gap-4 md:gap-4 gap-2
+}
+.resize-nav-github{
+    @apply xl:inline md:inline hidden xl:size-8 md:size-8
+}
+.resize-nav-pad{
+    @apply xl:pl-10 xl:pr-10 md:pl-10 md:pr-10 pr-0 pl-0
+}
+.resize-nav-theme{
+    @apply xl:size-8 md:size-8 size-6
+}
+.resize-nav-settings{
+    @apply xl:gap-4 md:gap-4 gap-2 xl:text-base md:text-base text-sm
+}
+.resize-nav-arrow{
+    @apply xl:size-3 md:size-3 size-2
+}
+.float-desc-card{
+    @apply h-7 w-auto font-semibold transition-colors duration-100 dark:bg-grey-300/15 bg-grey-700/15 border-2 dark:border-grey-400/15 border-grey-600/15 dark:text-grey-200 text-grey-800 dark:hover:border-grey-600 hover:border-grey-500 p-2 flex place-items-center rounded-full
+}
