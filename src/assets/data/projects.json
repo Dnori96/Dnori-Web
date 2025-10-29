@@ -1,0 +1,18 @@
+{
+    "projects":[
+        {
+            "projectId": 1,
+            "nameEN": "Password Generator",
+            "nameES": "Generador de Contraseñas",
+            "descEN": "A challenge given by Frontend Mentor, to create a password generator app",
+            "descES": "Un desafio dado por Frontend Mentor, para crear una aplicacion generador de contraseñas",
+            "github": "https://github.com/Dnori96/password-generator",
+            "website": "https://dnori96.github.io/password-generator/",
+            "tech":[
+                "html",
+                "css",
+                "javascript"
+            ]
+        }
+    ]
+}
