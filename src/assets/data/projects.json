@@ -21,7 +21,7 @@
             "descEN": "Website to helps you find healthy recipes, Frontend Mentor challenge",
             "descES": "Pagina web donde puedes encontrar recetas sanas, desafio de Frontend Mentor",
             "github": "https://github.com/Dnori96/WellPlateFinder",
-            "website": "",
+            "website": "https://well-plate-finder.vercel.app/",
             "tech":[
                 "React",
                 "Vite",

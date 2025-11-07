@@ -26,11 +26,9 @@
    ```bash
    npm install
 
-3. Install Tailwind and libreries 🫨
+3. Install Tailwind if you dont have it 🫨
    ```bash
    npm install tailwindcss @tailwindcss/vite
-   npm install @headlessui/react
-   npm install @midudev/tailwind-animations
 4. Run it 🤑
    ```bash
    npm run dev
