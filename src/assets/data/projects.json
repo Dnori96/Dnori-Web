@@ -13,6 +13,21 @@
                 "css",
                 "javascript"
             ]
+        },
+        {
+            "projectId": 2,
+            "nameEN": "WellPlateFinder",
+            "nameES": "WellPlateFinder",
+            "descEN": "Website to helps you find healthy recipes, Frontend Mentor challenge",
+            "descES": "Pagina web donde puedes encontrar recetas sanas, desafio de Frontend Mentor",
+            "github": "https://github.com/Dnori96/WellPlateFinder",
+            "website": "",
+            "tech":[
+                "React",
+                "Vite",
+                "Tailwind",
+                "Vitest"
+            ]
         }
     ]
 }
